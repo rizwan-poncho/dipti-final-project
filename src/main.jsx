@@ -1,18 +1,23 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 // import AppRouter from './Router/AppRouter.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App.jsx';
+import Auth from './Pages/Auth.jsx';
+import "./index.css"
+import Register from './Pages/Register.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <><App/></>,
+    element: <><Auth/></>,
+  },
+  {
+    path: "register",
+    element: <><Register/></>,
   },
 ]);
 
